@@ -45,8 +45,10 @@ public class Menu
                                 ClientFlow.ListClients();
                                 break;
                             case "3":
+                                ClientFlow.EditClient();
                                 break;
                             case "4":
+                                ClientFlow.DeleteClient();
                                 break;
                             case "5":
                                 clientMenu = false;
