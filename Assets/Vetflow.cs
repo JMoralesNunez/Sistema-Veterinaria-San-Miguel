@@ -45,19 +45,19 @@ public class Vetflow
     public static void EditVet()
     {
         Console.WriteLine("====== Editar Veterinario ======");
-        var editedVet = new Client();
+        var editedVet = new Veterinarian();
         int editId = ReadIdInput("Escribe el ID del veterinario registrado"); 
-        bool exist = ClientController.Check(editId);
+        bool exist = VetController.Check(editId);
         string name;
         if (exist)
         {
             do
             {
-                Console.WriteLine("Ingrese el nombre del veterinario: ");
+                Console.WriteLine("Ingrese el nuevo nombre del veterinario: ");
                 name = Console.ReadLine();
             } while (string.IsNullOrEmpty(name));
             editedVet.Name = name;
-            var isChanged = ClientController.Edit(editId, editedVet);
+            var isChanged = VetController.Edit(editId, editedVet);
             Console.WriteLine(isChanged ? "veterinario editado exitosamente" : "El usuario no se pudo editar");
             
         }
