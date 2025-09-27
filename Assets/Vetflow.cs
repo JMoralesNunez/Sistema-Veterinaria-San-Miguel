@@ -2,7 +2,7 @@ using Veterinaria.Controllers;
 
 namespace Veterinaria.Assets;
 
-public class Vetflow
+public abstract class Vetflow
 {
     public static void AddVet()
     {

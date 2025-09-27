@@ -76,12 +76,16 @@ public class Menu
                         switch (petOption)
                         {
                             case "1":
+                                PetFlow.AddPet();
                                 break;
                             case "2":
+                                PetFlow.ListPets();
                                 break;
                             case "3":
+                                PetFlow.EditPet();
                                 break;
                             case "4":
+                                PetFlow.DeletePet();
                                 break;
                             case "5":
                                 PetMenu = false;

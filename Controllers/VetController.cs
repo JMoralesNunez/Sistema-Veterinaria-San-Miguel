@@ -32,14 +32,14 @@ public abstract class VetController : Controller
     
     public static bool Edit(int Id, Veterinarian user)
     {
-        var oldClient = ClientConnection.Veterinarians.Find(Id);
+        var oldVet = ClientConnection.Veterinarians.Find(Id);
 
-        if (oldClient == null)
+        if (oldVet == null)
         {
             return false;
         }
 
-        oldClient.Name = user.Name;
+        oldVet.Name = user.Name;
         ClientConnection.SaveChanges();
         return true;
     }

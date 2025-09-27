@@ -53,7 +53,7 @@ public abstract class ClientFlow
         {
             do
             {
-                Console.WriteLine("Ingrese el nombre del cliente: ");
+                Console.WriteLine("Ingrese el nuevo nombre del cliente: ");
                 name = Console.ReadLine();
             } while (string.IsNullOrEmpty(name));
             editedClient.Name = name;
