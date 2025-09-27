@@ -109,12 +109,16 @@ public class Menu
                         switch (VetOption)
                         {
                             case "1":
+                                Vetflow.AddVet();
                                 break;
                             case "2":
+                                Vetflow.ListVets();
                                 break;
                             case "3":
+                                Vetflow.EditVet();
                                 break;
                             case "4":
+                                Vetflow.DeleteVet();
                                 break;
                             case "5":
                                 VetMenu = false;

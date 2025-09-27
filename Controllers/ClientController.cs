@@ -31,9 +31,9 @@ public abstract class ClientController : Controller
         }
     }
 
-    public static bool Edit(int clientId, Client user)
+    public static bool Edit(int Id, Client user)
     {
-            var oldClient = ClientConnection.Clients.Find(clientId);
+            var oldClient = ClientConnection.Clients.Find(Id);
 
             if (oldClient == null)
             {
@@ -45,9 +45,9 @@ public abstract class ClientController : Controller
             return true;
     }
 
-    public static bool Delete(int clientId)
+    public static bool Delete(int Id)
     {
-        var user = ClientConnection.Clients.Find(clientId);
+        var user = ClientConnection.Clients.Find(Id);
         
         if (user == null)
         {

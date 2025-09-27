@@ -7,9 +7,9 @@ public abstract class ClientFlow
     public static void AddClient()
     {
         Console.WriteLine("====== Agregar Cliente ======");
-        var Client = new Client();
+        Client client = new Client();
 
-        string name;
+        string? name;
         do
         {
             Console.WriteLine("Ingrese el nombre del cliente: ");
@@ -21,8 +21,8 @@ public abstract class ClientFlow
             }
         } while (string.IsNullOrEmpty(name));
 
-        Client.Name = name;
-        var isCreated = ClientController.Add(Client);
+        client.Name = name;
+        var isCreated = ClientController.Add(client);
         Console.WriteLine(isCreated ? "Usuario agregado con éxito." : "No se pudo agregar el usuario.");
     }
 
