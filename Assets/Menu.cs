@@ -45,8 +45,10 @@ public class Menu
                                 ClientFlow.ListClients();
                                 break;
                             case "3":
+                                ClientFlow.EditClient();
                                 break;
                             case "4":
+                                ClientFlow.DeleteClient();
                                 break;
                             case "5":
                                 clientMenu = false;
@@ -74,12 +76,16 @@ public class Menu
                         switch (petOption)
                         {
                             case "1":
+                                PetFlow.AddPet();
                                 break;
                             case "2":
+                                PetFlow.ListPets();
                                 break;
                             case "3":
+                                PetFlow.EditPet();
                                 break;
                             case "4":
+                                PetFlow.DeletePet();
                                 break;
                             case "5":
                                 PetMenu = false;
@@ -107,12 +113,16 @@ public class Menu
                         switch (VetOption)
                         {
                             case "1":
+                                Vetflow.AddVet();
                                 break;
                             case "2":
+                                Vetflow.ListVets();
                                 break;
                             case "3":
+                                Vetflow.EditVet();
                                 break;
                             case "4":
+                                Vetflow.DeleteVet();
                                 break;
                             case "5":
                                 VetMenu = false;

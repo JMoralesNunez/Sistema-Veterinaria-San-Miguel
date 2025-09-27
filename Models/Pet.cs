@@ -8,6 +8,7 @@ public class Pet
     public MedicalHistory History { get; set; }
     
     public int ClientId { get; set; }
+    
     public Client Client { get; set; }
     
     public ICollection<Veterinarian> Veterinarians { get; set; }
